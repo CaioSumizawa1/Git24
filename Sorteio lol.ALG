@@ -1,12 +1,11 @@
-
 Algoritmo "sorteioitem"
-// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
+// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
 // Professor   : Edson Shinki Kaneshima
-// Descri√ß√£o   : Aqui voc√™ descreve o que o programa faz! (fun√ß√£o)
+// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
 // Autor(a)    : Enzo Pinheiro e Caio Sumizawa
 // Data atual  : 24/08/2022
 Var
-// Se√ß√£o de Declara√ß√µes das vari√°veis
+// SeÁ„o de DeclaraÁıes das vari·veis
 im : vetor [0..30] de caracter
 cp : vetor [0..30] de caracter
 b : inteiro
@@ -96,12 +95,12 @@ retorne c
 fimfuncao
 
 Inicio
-// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
+// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
 p_di
 p_cp
 Enquanto (b<>3) faca
-escreval("1- Sorteio de campe√£o")
-escreval ("2- Sorteio de item m√≠tico")
+escreval("1- Sorteio de campe„o")
+escreval ("2- Sorteio de item mÌtico")
 escreval ("3- Sair")
 leia (b)
 escolha (b)
@@ -111,73 +110,6 @@ caso 1
 escreval(cp[f_cp])
 fimescolha
 fimenquanto
-
-
-
-=======
-Algoritmo "sorteioitem"
-// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
-// Professor   : Edson Shinki Kaneshima 
-// Descri√ß√£o   : Aqui voc√™ descreve o que o programa faz! (fun√ß√£o)
-// Autor(a)    : Enzo Pinheiro e Caio Sumizawa
-// Data atual  : 24/08/2022
-Var
-// Se√ß√£o de Declara√ß√µes das vari√°veis 
-im : vetor [0..30] de caracter
-b : inteiro
-
-procedimento p_di
-var
-inicio
-im[0] <- "Crown of the Shattered Queen (Coroa)"
-im[1] <- "Divine Sunderer (Ruptor)"
-im[2] <- "Duskblade of Draktharr (Draktharr)"
-im[3] <- "Eclipse"
-im[4] <- "Evenshroud"
-im[5] <- "Everfrost (Gelinho)"
-im[6] <- "Frostfire Gauntlet (Manopla)"
-im[7] <- "Galeforce (Ventaval)"
-im[8] <- "Goredrinker (Hemodrenario)"
-im[9] <- "Hextech Rocketbelt (Protobelt)"
-im[10] <- "Immortal Shieldbow (Arco escudo)"
-im[11] <- "Imperial Mandate (Mandato)"
-im[12] <-  "Kraken Slayer (Kraken)"
-im[13] <-  "Liandry's Anguish (Liandry's)"
-im[14] <-  "Locket of the Iron Solari (Solari)"
-im[15] <- "Luden's Tempest (Lunde's)"
-im[17] <- "Moonstone Renewer (Pedra lunar)"
-im[18] <- "Night Harvester (Coledor Noturno)"
-im[19] <- "Prowler's Claw (Garra)"
-im[20] <- "Riftmaker (Quebra fendas)"
-im[21] <- "Shurelya's Battlesong (Shurelya's)"
-im[22] <- "Stridebreaker (Quebra Passos)"
-im[23] <- "Sunfire Aegis (Aegis)"
-im[24] <- "Trinity Force (Trinity)"
-im[25] <- "Turbo Chemtank (Quimio-tanqu)"
-
-fimprocedimento
-
-funcao f_im : inteiro
-var
-i : inteiro
-inicio
-i <- randi(26)
-retorne i
-fimfuncao
-
-Inicio
-// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
-p_di
-Enquanto (b<>3) faca
-escreval("1- Sorteio de item m√≠tico")
-escreval ("3- Sair")
-leia (b)
-escolha (b)
-caso 1
-escreval(im[f_im])
-fimescolha
-fimenquanto
-
 
 
 
